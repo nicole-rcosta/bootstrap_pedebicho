@@ -2,6 +2,7 @@ Pé de Bicho
 
 Estrutura HTML: Jenifer
 Fazendo a estrutura do html agora
+Linkando as páginas de html umas com as outras
 
 Bootstrap e Responsividade: Nicole
 JavaScript: Fernanda
