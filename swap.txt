@@ -25,7 +25,7 @@ d) Galeria de imagens -
 e) Formulário de contato - Fazendo(faltando o JS)
 f) Rodapé - 
 g) Alertas personalizados com SweetAlert2 - 
-h) Bootstrap Icons - 
+h) Bootstrap Icons - Feito
 i) HTML semântico - 
 j) Responsividade - Navbar(OK), 
 k) Organização utilizando padrão BEM - 

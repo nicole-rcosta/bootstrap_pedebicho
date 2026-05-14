@@ -1,3 +1,6 @@
+
+////////////////////////////////////////////////////////////////////////////////
+/* CSS Página Index */
 body{
     background-color: #faefe2;
 }
@@ -66,3 +69,108 @@ body{
 }
 
 
+/////////////////////////////////////////////////////////////////////////////////////
+/* CSS Página Registrar */
+main h1 {
+    color: #1D428A; 
+    text-align: center; 
+    font-weight: bold;
+    margin-top: 40px;
+    width: 100%;
+    display: block; 
+}
+
+main p {
+    text-align: center;
+    color: #666;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+main form {
+    background-color: #ffffff;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    border: 1px solid #eee;
+}
+
+
+main form .form-label {
+    color: #1D428A;
+    font-weight: 600;
+}
+
+main form .form-control {
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+#registrarPet {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    margin: 30px auto 0 auto; 
+    background-color: #F2994A; 
+    border: none;
+    padding: 15px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(242, 153, 74, 0.4);
+    transition: all 0.3s ease;
+}
+
+#registrarPet:hover {
+    background-color: #e68a39;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(242, 153, 74, 0.6);
+}
+
+
+main {
+    padding: 20px;
+    background-color: #faefe2;
+   
+}
+
+main h1{
+    text-align: center;
+}
+
+////////////////////////////////////////////////////////////////////
+/* CARDS */
+
+.row-cols-lg-5 .card {
+    min-width: 0; 
+    border-radius: 10px !important;
+    background-color: #FDF2F2 !important;
+}
+
+.row-cols-lg-5 .card-img-top {
+    height: 150px; 
+    object-fit: cover;
+}
+
+
+#nomePet {
+    font-size: 0.9rem !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+.card-text {
+    font-size: 0.8rem;
+}
+
+#adotarPet {
+    font-size: 0.75rem !important;
+    padding: 5px;
+}

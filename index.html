@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pé de Bicho</title>
 
-     <!-- Links para inserção do bootstrap aqui -->
-     <!--Bootstrap CSS  -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Links para inserção do bootstrap aqui -->
+    <!--Bootstrap CSS  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
     <!-- --Bootstrap icones -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
@@ -20,71 +22,77 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 
     <!-- Link JS -->
-    <script src="./assets/js/script.js" defer></script>
+    <script src="./js/script.js" defer></script>
 
 </head>
-<body> 
+
+<body>
     <aside class="sidebar-lateral d-none d-md-block"></aside>
     <header>
         <!-- Inserção do header com o bootstrap aqui -->
         <nav class="navbar navbar-expand-lg header-laranja">
-    <div class="container-fluid">
-        <a class="navbar-brand text-white fw-bold" href="#">
-            <span class="marca-azul">
-                <i class="bi bi-house-heart"></i> Pé de
-            </span> 
-            Bicho
-        </a>
+            <div class="container-fluid">
+                <a class="navbar-brand text-white fw-bold" href="#">
+                    <span class="marca-azul">
+                        <i class="bi bi-house-heart"></i> Pé de
+                    </span>
+                    Bicho
+                </a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
-            
-            <ul class="navbar-nav bg-itens-nav">
-                <li class="nav-item">
-                    <a class="nav-link active text-white" aria-current="page" href="#">
-                        </i> Início
-                    </a>
-                </li>
-                
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">
-                        Pets
-                    </a>
-                    <ul class="dropdown-menu border-0 shadow">
-                        <li><a class="dropdown-item" href="./html/cachorros.html">Cachorros</a></li>
-                        <li><a class="dropdown-item" href="./html/gatos.html">Gatos</a></li>
-                        <li><a class="dropdown-item" href="./html/coelhos.html">Coelhos</a></li>
-                        <li><a class="dropdown-item" href="./html/outros.html">Outros</a></li>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+
+                    <ul class="navbar-nav bg-itens-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="#">
+                                </i> Início
+                            </a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                data-bs-toggle="dropdown">
+                                Pets
+                            </a>
+                            <ul class="dropdown-menu border-0 shadow">
+                                <li><a class="dropdown-item" href="#cards-cachorros">Cachorros</a></li>
+                                <li><a class="dropdown-item" href="#cards-gatos">Gatos</a></li>
+                                <li><a class="dropdown-item" href="#cards-coelhos">Coelhos</a></li>
+                                <li><a class="dropdown-item" href="#cards-outros">Outros</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#registrar">Registrar Pet</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#contato">Contate-nos</a>
+                        </li>
                     </ul>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="./html/página-registrar.html">Registrar Pet</a>
-                </li>
-                
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="./html/contato.html">Contato</a>
-                </li>
-            </ul>
-        </div>
+                </div>
 
 
-    </div>
-</nav>
+            </div>
+        </nav>
 
     </header>
     <main>
-        <!-- Banners (com carrossel)-->
-        <section>
+        <!-- Banners com carrossel (Hero section)-->
+        <section class="banners">
             <div id="carouselExampleIndicators" class="carousel slide w-50 mx-auto mt-5">
-                
+
                 <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
                 </div>
 
                 <div class="carousel-inner">
@@ -99,75 +107,341 @@
                     </div>
                 </div>
 
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-    </section>
-
-        <!-- Cards dos animais -->
-        <section>
-            <div class="card" style="width: 14rem; ">
-                <img src="./assets/img/cachorro01.jpg" class="card-img-top" alt="card-Cachorro01">
-                <div class="card-body">
-                    <h5 class="card-title" id="nomePet">Nome     Raça:</h5>
-                    <p class="card-text">Lugar</p>
-                    <a class="btn btn-outline-primary" id="adotarPet">Adotar!</a>
-                </div>
-            </div>
-            <!-- <div class="card" style="width: 18rem;">
-                <img src="./assets/img/cachorro01.jpg" class="card-img-top" alt="card-02">
-                <div class="card-body">
-                    <h5 class="card-title" id="nomePet">Nome     Raça:</h5>
-                    <p class="card-text">Lugar</p>
-                    <a href="#" class="btn btn-outline-primary" id="adotarPet">Adotar!</a>
-                </div>
-            </div> 
-            <div class="card" style="width: 18rem;">
-                <img src="./assets/img/cachorro01.jpg" class="card-img-top" alt="card-03">
-                <div class="card-body">
-                    <h5 class="card-title" id="nomePet">Nome     Raça:</h5>
-                    <p class="card-text">Lugar</p>
-                    <a href="#" class="btn btn-outline-primary" id="adotarPet">Adotar!</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="./assets/img/cachorro01.jpg" class="card-img-top" alt="card-04">
-                <div class="card-body">
-                    <h5 class="card-title" id="nomePet">Nome     Raça:</h5>
-                    <p class="card-text">Lugar</p>
-                    <a href="#" class="btn btn-outline-primary" id="adotarPet">Adotar!</a>
-                </div>
-            </div> 
-            <div class="card" style="width: 18rem;">
-                <img src="./assets/img/cachorro01.jpg" class="card-img-top" alt="card-05">
-                <div class="card-body">
-                    <h5 class="card-title" id="nomePet">Nome     Raça:</h5>
-                    <p class="card-text">Lugar</p>
-                    <a href="#" class="btn btn-outline-primary" id="adotarPet">Adotar!</a>
-                </div>
-            </div> -->
-
-            
         </section>
 
 
-    </main>
-    <footer>
-        <!-- Dados gerais da empresa e links para a parte de contato -->
-    </footer>
+        <div class="shadow-sm p-3 mb-5 mt-5 bg-body-orange rounded text-dark text-center">Cachorros</div>
+
+        <!-- Cards dos cachorros -->
+        <section id="cards-cachorros">
+            <section class="container-fluid mt-5 px-5">
+                <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5 g-3 justify-content-center">
+
+                    <div class="col">
+                        <div class="card h-100 mx-auto">
+                            <img src="./assets/img/cachorro01.jpg" class="card-img-top" alt="card-Cachorro01">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title" id="nomePet">Nome: Bolt</h5>
+                                <p class="card-text">São Paulo, SP</p>
+                                <a class="btn btn-outline-primary mt-auto adotarPet" id="adotarPet">Adotar!</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100 mx-auto">
+                            <img src="./assets/img/cachorro02.jpg" class="card-img-top" alt="card-Cachorro02">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title" id="nomePet">Nome: Bolt</h5>
+                                <p class="card-text">Campinas, SP</p>
+                                <a class="btn btn-outline-primary mt-auto adotarPet" id="adotarPet">Adotar!</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100 mx-auto">
+                            <img src="./assets/img/cachorro03.jpg" class="card-img-top" alt="card-Cachorro03">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title" id="nomePet">Nome: Bolt</h5>
+                                <p class="card-text">Limeira, SP</p>
+                                <a class="btn btn-outline-primary mt-auto adotarPet" id="adotarPet">Adotar!</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100 mx-auto">
+                            <img src="./assets/img/cachorro04.jpg" class="card-img-top" alt="card-Cachorro04">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title" id="nomePet">Nome: Bolt</h5>
+                                <p class="card-text">Sorocaba, SP</p>
+                                <a class="btn btn-outline-primary mt-auto adotarPet" id="adotarPet">Adotar!</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100 mx-auto">
+                            <img src="./assets/img/cachorro05.jpg" class="card-img-top" alt="card-Cachorro05">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title" id="nomePet">Nome: Bolt</h5>
+                                <p class="card-text">Botucatu, SP</p>
+                                <a class="btn btn-outline-primary mt-auto adotarPet" id="adotarPet">Adotar!</a>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+
+         <div class="shadow-sm p-3 mb-5 mt-5 bg-body-orange rounded text-dark text-center">Gatos</div>
+
+            <!-- Card dos Gatos -->
+            <section id="cards-gatos">
+        <section class="container-fluid mt-5 px-5"> <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5 g-3 justify-content-center"> 
+        
+        <div class="col">
+            <div class="card h-100 mx-auto"> 
+                <img src="./assets/img/gato01.jpg" class="card-img-top" alt="card-Gato01">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title" id="nomePet">Nome: Bolt</h5>
+                    <p class="card-text">Lugar</p>
+                    <a class="btn btn-outline-primary mt-auto adotarPet" id="adotarPet">Adotar!</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100 mx-auto"> 
+                <img src="./assets/img/gato02.jpg" class="card-img-top" alt="card-Gato02">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title" id="nomePet">Nome: Bolt</h5>
+                    <p class="card-text">Lugar</p>
+                    <a class="btn btn-outline-primary mt-auto adotarPet" id="adotarPet">Adotar!</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100 mx-auto"> 
+                <img src="./assets/img/gato03.jpg" class="card-img-top" alt="card-Gato03">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title" id="nomePet">Nome: Bolt</h5>
+                    <p class="card-text">Lugar</p>
+                    <a class="btn btn-outline-primary mt-auto adotarPet" id="adotarPet">Adotar!</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100 mx-auto"> 
+                <img src="./assets/img/gato04.jpg" class="card-img-top" alt="card-Gato04">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title" id="nomePet">Nome: Bolt</h5>
+                    <p class="card-text">Lugar</p>
+                    <a class="btn btn-outline-primary mt-auto adotarPet" id="adotarPet">Adotar!</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100 mx-auto"> 
+                <img src="./assets/img/gato05.jpg" class="card-img-top" alt="card-Gato05">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title" id="nomePet">Nome: Bolt</h5>
+                    <p class="card-text">Lugar</p>
+                    <a class="btn btn-outline-primary mt-auto adotarPet" id="adotarPet">Adotar!</a>
+                </div>
+            </div>
+        </div>
+</section>
+
+ <div class="shadow-sm p-3 mb-5 mt-5 bg-body-orange rounded text-dark text-center">Coelhos</div>
+ 
+            <!-- Cards Coelhos -->
+            <section id="cards-coelhos">
+        <section class="container-fluid mt-5 px-5"> <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5 g-3 justify-content-center"> 
+        
+        <div class="col">
+            <div class="card h-100 mx-auto"> 
+                <img src="./assets/img/coelho01.jpg" class="card-img-top" alt="card-Coelho01">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title" id="nomePet">Nome: Bolt</h5>
+                    <p class="card-text">Lugar</p>
+                    <a class="btn btn-outline-primary mt-auto adotarPet" id="adotarPet">Adotar!</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100 mx-auto"> 
+                <img src="./assets/img/coelho02.jpg" class="card-img-top" alt="card-Coelho02">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title" id="nomePet">Nome: Bolt</h5>
+                    <p class="card-text">Lugar</p>
+                    <a class="btn btn-outline-primary mt-auto adotarPet" id="adotarPet">Adotar!</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100 mx-auto"> 
+                <img src="./assets/img/coelho03.jpg" class="card-img-top" alt="card-Coelho03">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title" id="nomePet">Nome: Bolt</h5>
+                    <p class="card-text">Lugar</p>
+                    <a class="btn btn-outline-primary mt-auto adotarPet" id="adotarPet">Adotar!</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100 mx-auto"> 
+                <img src="./assets/img/coelho04.jpg" class="card-img-top" alt="card-Coelho04">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title" id="nomePet">Nome: Bolt</h5>
+                    <p class="card-text">Lugar</p>
+                    <a class="btn btn-outline-primary mt-auto adotarPet" id="adotarPet">Adotar!</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100 mx-auto"> 
+                <img src="./assets/img/coelho.jpg" class="card-img-top" alt="card-Coelho05">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title" id="nomePet">Nome: Bolt</h5>
+                    <p class="card-text">Lugar</p>
+                    <a class="btn btn-outline-primary mt-auto adotarPet" id="adotarPet">Adotar!</a>
+                </div>
+            </div>
+        </div>
+</section>
+
+<div class="shadow-sm p-3 mb-5 mt-5 bg-body-orange rounded text-dark text-center">Outros animais</div>
+<!-- Cards outros animais -->
+<section id="cards-outros">
+        <section class="container-fluid mt-5 px-5"> <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5 g-3 justify-content-center"> 
+        
+        <div class="col">
+            <div class="card h-100 mx-auto"> 
+                <img src="./assets/img/porco01.jpg" class="card-img-top" alt="card-Animal01">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title" id="nomePet">Nome: Bolt</h5>
+                    <p class="card-text">Lugar</p>
+                    <a class="btn btn-outline-primary mt-auto adotarPet" id="adotarPet">Adotar!</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100 mx-auto"> 
+                <img src="./assets/img/porco02.jpg" class="card-img-top" alt="card-Animal02">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title" id="nomePet">Nome: Bolt</h5>
+                    <p class="card-text">Lugar</p>
+                    <a class="btn btn-outline-primary mt-auto adotarPet" id="adotarPet">Adotar!</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100 mx-auto"> 
+                <img src="./assets/img/porco03.jpg" class="card-img-top" alt="card-Animal03">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title" id="nomePet">Nome: Bolt</h5>
+                    <p class="card-text">Lugar</p>
+                    <a class="btn btn-outline-primary mt-auto adotarPet" id="adotarPet">Adotar!</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100 mx-auto"> 
+                <img src="./assets/img/tartaruga01.jpg" class="card-img-top" alt="card-Animal04">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title" id="nomePet">Nome: Bolt</h5>
+                    <p class="card-text">Lugar</p>
+                    <a class="btn btn-outline-primary mt-auto adotarPet" id="adotarPet">Adotar!</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100 mx-auto"> 
+                <img src="./assets/img/tartaruga04.jpg" class="card-img-top" alt="card-Anima05">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title" id="nomePet">Nome: Bolt</h5>
+                    <p class="card-text">Lugar</p>
+                    <a class="btn btn-outline-primary mt-auto adotarPet" id="adotarPet">Adotar!</a>
+                </div>
+            </div>
+        </div>
+</section>
+
+            <!-- Seção de registro -->
+            <section id="registrar">
+                <h1 class="">Encontrar novos lares</h1>
+                <p>Essa área existe para avisar e cadastrar um animal que foi encontrado em situações de rua ou que
+                    precisam ser doados/adotados. Se você conhece algum nessas situações, registre no Pé de Bicho!</p>
+                <form>
+                    <div class="mb-3">
+                        <label for="InputName" class="form-label">Nome do Cuidador</label>
+                        <input type="tel" class="form-control" id="InputName">
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputTel" class="form-label">Telefone</label>
+                        <input type="tel" id="inputTel" class="form-control" name="telefone"
+                            placeholder="(11) 90000-0000">
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputAddress" class="form-label">Endereço</label>
+                        <input type="tel" class="form-control" id="inputAddress">
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputEsp" class="form-label">Espécie do Animal</label>
+                        <input type="tel" class="form-control" id="inputEsp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputRaca" class="form-label">Raça do Animal</label>
+                        <input type="tel" class="form-control" id="inputRaca">
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputEmail" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">Caso tenha interesse em saber quando o pet foi adotado.
+                        </div>
+                    </div>
 
 
-    <!-- Link JS bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    
-    <!-- Link JS sweetAlert2 -->
-   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+                    <button type="submit" class="btn btn-primary" id="registrarPet">Registrar</button>
+                </form>
+            </section>
+
+            <!-- Seção de contato -->
+            <section id="contato">
+                <h1>Entre em contato conosco!</h1>
+                <div class="mb-3">
+                    <label for="InputName" class="form-label">Nome</label>
+                    <input type="tel" class="form-control" id="InputName">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Comentários</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" id="contatarAgencia">Contatar</button>
+
+            </section>
+
+            <footer>
+                <!-- Dados gerais da empresa e links para a parte de contato -->
+                <h1>Footer</h1>
+            </footer>
+
+
+            <!-- Link JS bootstrap -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+                crossorigin="anonymous"></script>
+
+            <!-- Link JS sweetAlert2 -->
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </body>
+
 </html>
