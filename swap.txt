@@ -6,6 +6,7 @@ Fazendo a estrutura do html agora
 Bootstrap e Responsividade: Nicole
 JavaScript: Fernanda
 Organização Visual: Manuely
+Colocando os links para vincular as páginas
 
 Cores site: Laranja(principal), branco, azul, preto.
 
