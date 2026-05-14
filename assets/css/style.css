@@ -1,0 +1,68 @@
+body{
+    background-color: #faefe2;
+}
+
+.header-laranja {
+    background-color: #F2994A ; 
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 0.8rem 0;
+}
+
+
+.bg-itens-nav {
+    background-color: rgba(255, 255, 255, 0.2); 
+    border-radius: 4px; 
+    padding: 2px 10px;
+}
+
+
+.header-laranja .nav-link {
+    color: #ffffff;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    margin: 0 5px; 
+}
+
+
+.header-laranja .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.3); 
+    border-radius: 4px;
+}
+
+
+.navbar-brand {
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #ffffff ;
+    text-transform: none;
+
+}
+
+
+.opacity-50 {
+    opacity: 0.5;
+}
+
+
+.dropdown-menu {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    margin-top: 10px ;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+    color: #F2994A ;
+}
+
+
+.marca-azul {
+    color: #1D428A;
+    margin-right: 2px;
+    font-weight: 1800; 
+}
+
+

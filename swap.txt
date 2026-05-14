@@ -3,14 +3,31 @@ Pé de Bicho
 Estrutura HTML: Jenifer
 Fazendo a estrutura do html agora
 Linkando as páginas de html umas com as outras
+Procurando um form no bootstrap e editando de acoro com as necessidades do projeto
 
 Bootstrap e Responsividade: Nicole
 JavaScript: Fernanda
 Organização Visual: Manuely
 Colocando os links para vincular as páginas
+Padronizando e vendo a organização
 
 Cores site: Laranja(principal), branco, azul, preto.
 
 Navbar: Home(Quem somos nós), Pets(Dropdown), Registrar Pet(Formulário), Contato.
 
 Card Pet: Nome, raça, local, adote-me(botão).
+
+
+a) Navbar responsiva com dropdown - Feito
+b) Hero section (seção de destaque) - Fazendo
+c) Cards de apresentação - Fazendo
+d) Galeria de imagens - 
+e) Formulário de contato - Fazendo(faltando o JS)
+f) Rodapé - 
+g) Alertas personalizados com SweetAlert2 - 
+h) Bootstrap Icons - 
+i) HTML semântico - 
+j) Responsividade - Navbar(OK), 
+k) Organização utilizando padrão BEM - 
+
+https://github.com/nicole-rcosta/bootstrap_pedebicho.git

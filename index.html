@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -13,80 +12,149 @@
     <!-- --Bootstrap icones -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
+    <!-- Link sweetAlert2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.18.0/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.18.0/dist/sweetalert2.all.min.js" defer></script>
+
     <!-- Link do CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Link JS -->
+    <script src="./assets/js/script.js" defer></script>
 
 </head>
-<body>
+<body> 
+    <aside class="sidebar-lateral d-none d-md-block"></aside>
     <header>
         <!-- Inserção do header com o bootstrap aqui -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house-heart"></i> Pé de Bicho</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <nav class="navbar navbar-expand-lg header-laranja">
+    <div class="container-fluid">
+        <a class="navbar-brand text-white fw-bold" href="#">
+            <span class="marca-azul">
+                <i class="bi bi-house-heart"></i> Pé de
+            </span> 
+            Bicho
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+            
+            <ul class="navbar-nav bg-itens-nav">
+                <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="#">
+                        </i> Início
+                    </a>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">
                         Pets
                     </a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu border-0 shadow">
                         <li><a class="dropdown-item" href="./html/cachorros.html">Cachorros</a></li>
                         <li><a class="dropdown-item" href="./html/gatos.html">Gatos</a></li>
                         <li><a class="dropdown-item" href="./html/coelhos.html">Coelhos</a></li>
-                        <li><a class="dropdown-item" href="./html/outros.html">Outros animais</a></li>
+                        <li><a class="dropdown-item" href="./html/outros.html">Outros</a></li>
                     </ul>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="./html/página-registrar.html">Registrar Pet</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="./html/contato.html">Contato</a>
-                    </li>
-                </ul>
-                </div>
-            </div>
-        </nav>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="./html/página-registrar.html">Registrar Pet</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="./html/contato.html">Contato</a>
+                </li>
+            </ul>
+        </div>
+
+
+    </div>
+</nav>
 
     </header>
     <main>
         <!-- Banners (com carrossel)-->
         <section>
-            <div id="carouselExampleIndicators" class="carousel slide">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                <img src="./assets/img/herosection.png" class="d-block w-100" alt="...">
+            <div id="carouselExampleIndicators" class="carousel slide w-50 mx-auto mt-5">
+                
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
-                <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                <img src="./assets/img/herosection2.png" class="d-block w-100" alt="...">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-            </div>
-        <section>
 
-        <!-- Mostra dos animais (decidir o que) -->
-        <section></section>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/img/herosection.png" class="d-block w-100 rounded shadow" alt="Banner 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/herosection3.png" class="d-block w-100 rounded shadow" alt="Banner 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/herosection2.png" class="d-block w-100 rounded shadow" alt="Banner 3">
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+    </section>
+
+        <!-- Cards dos animais -->
+        <section>
+            <div class="card" style="width: 14rem; ">
+                <img src="./assets/img/cachorro01.jpg" class="card-img-top" alt="card-Cachorro01">
+                <div class="card-body">
+                    <h5 class="card-title" id="nomePet">Nome     Raça:</h5>
+                    <p class="card-text">Lugar</p>
+                    <a class="btn btn-outline-primary" id="adotarPet">Adotar!</a>
+                </div>
+            </div>
+            <!-- <div class="card" style="width: 18rem;">
+                <img src="./assets/img/cachorro01.jpg" class="card-img-top" alt="card-02">
+                <div class="card-body">
+                    <h5 class="card-title" id="nomePet">Nome     Raça:</h5>
+                    <p class="card-text">Lugar</p>
+                    <a href="#" class="btn btn-outline-primary" id="adotarPet">Adotar!</a>
+                </div>
+            </div> 
+            <div class="card" style="width: 18rem;">
+                <img src="./assets/img/cachorro01.jpg" class="card-img-top" alt="card-03">
+                <div class="card-body">
+                    <h5 class="card-title" id="nomePet">Nome     Raça:</h5>
+                    <p class="card-text">Lugar</p>
+                    <a href="#" class="btn btn-outline-primary" id="adotarPet">Adotar!</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="./assets/img/cachorro01.jpg" class="card-img-top" alt="card-04">
+                <div class="card-body">
+                    <h5 class="card-title" id="nomePet">Nome     Raça:</h5>
+                    <p class="card-text">Lugar</p>
+                    <a href="#" class="btn btn-outline-primary" id="adotarPet">Adotar!</a>
+                </div>
+            </div> 
+            <div class="card" style="width: 18rem;">
+                <img src="./assets/img/cachorro01.jpg" class="card-img-top" alt="card-05">
+                <div class="card-body">
+                    <h5 class="card-title" id="nomePet">Nome     Raça:</h5>
+                    <p class="card-text">Lugar</p>
+                    <a href="#" class="btn btn-outline-primary" id="adotarPet">Adotar!</a>
+                </div>
+            </div> -->
+
+            
+        </section>
 
 
     </main>
@@ -94,9 +162,6 @@
         <!-- Dados gerais da empresa e links para a parte de contato -->
     </footer>
 
-    
-    <!-- Link JS -->
-    <link rel="stylesheet" href="assets/js/script.js">
 
     <!-- Link JS bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>

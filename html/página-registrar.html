@@ -1,19 +1,133 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrar um pet</title>
 
     <!-- Links para inserção do bootstrap aqui -->
-     <!--Bootstrap CSS  -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--Bootstrap CSS  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
     <!-- --Bootstrap icones -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <!-- Link sweetAlert2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.18.0/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.18.0/dist/sweetalert2.all.min.js" defer></script>
+
+    <!-- Link JS -->
+    <script src="../assets/js/script.js" defer></script>
+
 </head>
+
 <body>
-    <h1>Registre o amigo encontrado</h1>
+   <aside class="sidebar-lateral d-none d-md-block"></aside>
+    <header>
+        <!-- Inserção do header com o bootstrap aqui -->
+        <nav class="navbar navbar-expand-lg header-laranja">
+    <div class="container-fluid">
+        <a class="navbar-brand text-white fw-bold" href="#">
+            <span class="marca-azul">
+                <i class="bi bi-house-heart"></i> Pé de
+            </span> 
+            Bicho
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+            
+            <ul class="navbar-nav bg-itens-nav">
+                <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="../index.html">
+                        </i> Início
+                    </a>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">
+                        Pets
+                    </a>
+                    <ul class="dropdown-menu border-0 shadow">
+                        <li><a class="dropdown-item" href="./cachorros.html">Cachorros</a></li>
+                        <li><a class="dropdown-item" href="./gatos.html">Gatos</a></li>
+                        <li><a class="dropdown-item" href="./coelhos.html">Coelhos</a></li>
+                        <li><a class="dropdown-item" href="./outros.html">Outros</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="./página-registrar.html">Registrar Pet</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="./contato.html">Contato</a>
+                </li>
+            </ul>
+        </div>
+
+
+    </div>
+</nav>
+
+    </header>
+
+    <main>
+        <h1 class="">Registre o amigo encontrado</h1>
+        <p>Essa área tem o intuito de avisar e cadastrar um animal que foi encontrado em situações de rua ou que precisam ser doados/adotados</p>
+        <form>
+            <div class="mb-3">
+                <label for="InputName" class="form-label">Nome do Cuidador</label>
+                <input type="tel" class="form-control" id="InputName">
+            </div>
+            <div class="mb-3">
+                <label for="inputTel" class="form-label">Telefone</label>
+                <input type="tel" id="inputTel" class="form-control" name="telefone"  placeholder="(11) 90000-0000">
+            </div>
+            <div class="mb-3">
+                <label for="inputAddress" class="form-label">Endereço</label>
+                <input type="tel" class="form-control" id="inputAddress">
+            </div>
+            <div class="mb-3">
+                <label for="inputEsp" class="form-label">Espécie do Animal</label>
+                <input type="tel" class="form-control" id="inputEsp">
+            </div>
+            <div class="mb-3">
+                <label for="inputRaca" class="form-label">Raça do Animal</label>
+                <input type="tel" class="form-control" id="inputRaca">
+            </div>
+            <div class="mb-3">
+                <label for="inputEmail" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">Caso tenha interesse em saber quando o pet foi adotado.</div>
+            </div>
+    
+
+            <button type="submit" class="btn btn-primary" id="registrarPet">Registrar</button>
+        </form>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <!-- Link JS -->
+    <link rel="stylesheet" href="assets/js/script.js">
+
+    <!-- Link JS bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <!-- Link JS sweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
+
 </html>
