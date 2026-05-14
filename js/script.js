@@ -24,6 +24,8 @@ adotarPet.addEventListener('click', function () {
     });
 });
 
+
+
 // adotarPet.addEventListener('click', function () {
 //     Swal.mixin({
 //         customClass: {
